@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--  llamamos css y js -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandce Technology</title>
+    <link rel="shortcut icon" href="img/computer.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/whats.css">
+    <link rel="stylesheet" href="css/whats2.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="nav-bottom-chatbot">
+        <button type="button" id="whats-openPopup" class="chatbot-button">
+            <div class="float-chatbot">
+                <i class="fas fa-robot my-float-chatbot"></i>
+            </div>
+        </button>
+        <div class="circle-anime-chatbot"></div>
+    </div>
+
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top">
+                <button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+                <p> <img src="img/secretary.png" width="40"> Hola, ¿en que podemos ayudarle? </p>
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+    <script src="js/whatsapp.js"></script>
+     <!--    CODIGO DEL NAVEGADOR -->
+    <header>
+        <section class="buscador">
+            <div class="contenedor-buscador">
+                <img src="img/computer.png" alt="TechNews Logo" class="nav-brand">
+                <h1>B&L TECHNOLOGY</h1>
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu-outline" for="menu-bar" id="btn-menu"></label>
+                <nav class="menu">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#portafolio">Portafolio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#clientes">Clientes</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!--   BANNER -->
+        <section class="container-slider" id="inicio">
+            <div class="slider" id="slider"> <!-- CONTENEDOR GENERAL,4portadas -->
+                <div class="slider__section"> <!-- 1er portada -->
+                    <img src="img/port1.jpg" alt="" class="slider__img"> <!-- imagenes  -->
+                    <div class="slider__content">
+                        <h2 class="slider__title">Especialistas en Soporte Técnico</h2>
+                        <p class="slider__txt">Somos Profesionales que le brindarán la garantía y la seguridad que su empresa y hogar necesitan.</p>
+                        <a href="#servicios" class="btn-shop">SERVICIOS</a>
+                    </div>
+                </div>
+                <div class="slider__section"> <!--  2da portada -->
+                    <img src="img/port2.jpeg" alt="" class="slider__img">
+                    <div class="slider__content">
+                        <h2 class="slider__title">Planes de Soporte a la medida</h2>
+                        <p class="slider__txt">Diseñamos planes de Soporte Técnico con diferentes características para todo tamaño de empresas.</p>
+                        <a href="#servicios" class="btn-shop">SERVICIOS</a>
+                    </div>
+                </div>
+                <div class="slider__section">
+                    <img src="img/port3.jpg" alt="" class="slider__img">
+                    <div class="slider__content">
+                        <h2 class="slider__title">Soporte Técnico a domicilio</h2>
+                        <p class="slider__txt">Nuestros Técnicos a domicilio lo atenderán con la garantía y seguridad que solo una empresa formal puede brindarle.</p>
+                        <a href="#servicios" class="btn-shop">SERVICIOS</a>
+                    </div>
+                </div>
+                <div class="slider__section">
+                    <img src="img/port4.jpeg" alt="" class="slider__img">
+                    <div class="slider__content">
+                        <h2 class="slider__title">Venta de Equipos de Cómputo</h2>
+                        <p class="slider__txt">Somos distribuidores de las principales marcas del mercado, comercializamos equipos de calidad para garantizar su compra.</p>
+                        <a href="#productos" class="btn-shop">PRODUCTOS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+            <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+        </section>
+        <script src="js/portada.js"></script> <!-- desplazamiento al banner -->
+        <!--    CODIGO DE SECCION NOSOTROS -->
+        <section class="sobre-nosotros" id="nosotros">
+            <div class="contenedor"> <!-- titutolo y 1 contenedor  -->
+                <h2 class="titulo">CONOCE B&L TECHNOLOGY</h2> <!-- contiene q img y contenido de texto -->
+                <div class="contenedor-sobre-nosotros">
+                    <img src="img/presentación.jpg" alt="" class="imagen-about-us">
+                    <div class="contenido-textos">
+                        <h3><span>1</span>¿Quiénes Somos?</h3>
+                        <p>B&L Technology S.A.C es una empresa con 7 años de experiencia que tiene como misión
+                            convertirse en su aliado estratégico a través de la asesoría e implementación de Soluciones
+                            Integrales de Tecnología de Información para incrementar la productividad de su empresa.</p>
+                        <h3><span>2</span>Visión</h3>
+                        <p>Ser reconocidos por nuestros clientes y por el mercado como la principal agencia en brindar
+                            diferentes soluciones en el ámbito informático a nivel nacional e internacional, con el uso
+                            de la última tecnología y con personal altamente capacitado. </p>
+                        <h3><span>3</span>Misión</h3>
+                        <p>Prestar nuestros servicios para implementar soluciones informáticas a nuestros clientes,
+                            según sus necesidades con cualquier problema técnico informático o en el crecimiento de sus
+                            negocios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECCION PORTAFOLIO -->
+        <sectiion class="portafolio" id="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">PORTAFOLIO</h2>
+                <div class="galeria-port"> <!-- CONTENEDOR GENERAL Q CONTIENE ALAS 8 IMG -->
+                    <div class="imagen-port"> <!-- 1er contenedor,con su imagen, iconoo -->
+                        <img src="img/img1.png" alt="">
+                        <div class="hover-galeria">
+                            <a href="#modal1"><img src="img/icon1.png" alt=""></a>
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <a href="#modal2"><img src="img/icon1.png" alt=""></a>
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img3.jpg" alt="">
+                        <div class="hover-galeria">
+                            <a href="#modal3"><img src="img/icon1.png" alt=""></a>
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <a href="#modal4"><img src="img/icon1.png" alt=""></a>
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img5.png" alt="">
+                        <div class="hover-galeria">
+                            <a href="#modal5"><img src="img/icon1.png" alt=""></a>
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img6.jpeg" alt="">
+                        <div class="hover-galeria">
+                            <a href="#modal6"><img src="img/icon1.png" alt=""></a>
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img7.jpg" alt="">
+                        <div class="hover-galeria">
+                            <a href="#modal7"><img src="img/icon1.png" alt=""></a>
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img8.jpg" alt="">
+                        <div class="hover-galeria">
+                            <a href="#modal8"><img src="img/icon1.png" alt=""></a>
+                            <p>Nuestro Trabajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </sectiion>
+        <!-- VENTANA MODAL CUANDO DAMOS CLICK A PORTAFOLIO -->
+        <section id="modal1" class="modal">
+            <div class="modal_container"> <!-- 1era modal,imagen,titulo y el boton q nos regresa a portafolio -->
+                <figure class="modal_picture">
+                    <img src="img/drawing1.png" class="modal_img">
+                </figure>
+
+                <h2 class="modal_title">Title
+                    <span class="modal_title modal_title--bold">Sub title</span>
+                </h2>
+
+                <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequuntur, non
+                    omnis velit vitae aspernatur? Ipsum ullam at dicta modi.</p>
+
+                <a href="#portafolio" class="modal_close">Ver Portafolio</a> <!-- boton q nos regresa a portafolio -->
+            </div>
+        </section>
+        <section id="modal2" class="modal">
+            <div class="modal_container">
+                <figure class="modal_picture">
+                    <img src="img/drawing2.png" class="modal_img">
+                </figure>
+
+                <h2 class="modal_title">Title
+                    <span class="modal_title modal_title--bold">Sub title</span>
+                </h2>
+
+                <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequuntur, non
+                    omnis velit vitae aspernatur? Ipsum ullam at dicta modi.</p>
+
+                <a href="#portafolio" class="modal_close">Ver Portafolio</a>
+            </div>
+        </section>
+        <section id="modal3" class="modal">
+            <div class="modal_container">
+                <figure class="modal_picture">
+                    <img src="img/drawing3.png" class="modal_img">
+                </figure>
+
+                <h2 class="modal_title">Title
+                    <span class="modal_title modal_title--bold">Sub title</span>
+                </h2>
+
+                <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequuntur, non
+                    omnis velit vitae aspernatur? Ipsum ullam at dicta modi.</p>
+
+                <a href="#portafolio" class="modal_close">Ver Portafolio</a>
+            </div>
+        </section>
+        <section id="modal4" class="modal">
+            <div class="modal_container">
+                <figure class="modal_picture">
+                    <img src="img/drawing10.png" class="modal_img">
+                </figure>
+
+                <h2 class="modal_title">Title
+                    <span class="modal_title modal_title--bold">Sub title</span>
+                </h2>
+
+                <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequuntur, non
+                    omnis velit vitae aspernatur? Ipsum ullam at dicta modi.</p>
+
+                <a href="#portafolio" class="modal_close">Ver Portafolio</a>
+            </div>
+        </section>
+        <section id="modal5" class="modal">
+            <div class="modal_container">
+                <figure class="modal_picture">
+                    <img src="img/drawing4.png" class="modal_img">
+                </figure>
+
+                <h2 class="modal_title">Title
+                    <span class="modal_title modal_title--bold">Sub title</span>
+                </h2>
+
+                <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequuntur, non
+                    omnis velit vitae aspernatur? Ipsum ullam at dicta modi.</p>
+
+                <a href="#portafolio" class="modal_close">Ver Portafolio</a>
+            </div>
+        </section>
+        <section id="modal6" class="modal">
+            <div class="modal_container">
+                <figure class="modal_picture">
+                    <img src="img/drawing5.png" class="modal_img">
+                </figure>
+
+                <h2 class="modal_title">Title
+                    <span class="modal_title modal_title--bold">Sub title</span>
+                </h2>
+
+                <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequuntur, non
+                    omnis velit vitae aspernatur? Ipsum ullam at dicta modi.</p>
+
+                <a href="#portafolio" class="modal_close">Ver Portafolio</a>
+            </div>
+        </section>
+        <section id="modal7" class="modal">
+            <div class="modal_container">
+                <figure class="modal_picture">
+                    <img src="img/drawing7.png" class="modal_img">
+                </figure>
+
+                <h2 class="modal_title">Title
+                    <span class="modal_title modal_title--bold">Sub title</span>
+                </h2>
+
+                <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequuntur, non
+                    omnis velit vitae aspernatur? Ipsum ullam at dicta modi.</p>
+
+                <a href="#portafolio" class="modal_close">Ver Portafolio</a>
+            </div>
+        </section>
+        <section id="modal8" class="modal">
+            <div class="modal_container">
+                <figure class="modal_picture">
+                    <img src="img/drawing8.png" class="modal_img">
+                </figure>
+
+                <h2 class="modal_title">Title
+                    <span class="modal_title modal_title--bold">Sub title</span>
+                </h2>
+
+                <p class="modal_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequuntur, non
+                    omnis velit vitae aspernatur? Ipsum ullam at dicta modi.</p>
+
+                <a href="#portafolio" class="modal_close">Ver Portafolio</a>
+            </div>
+        </section>
+         <!-- SECCION SERVICIOS -->
+        <section class="about-services" id="servicios">
+            <div class="contenedor">
+                <h2 class="titulo">NUESTROS SERVICIOS</h2>
+                <div class="servicio-cont"> <!-- contenedor,contiene a los 4 servicios -->
+                    <div class="servicio-ind"> <!-- 1er contenedor,contiene img,titulo,el enlace q nos abre otra ventana modal -->
+                        <img src="img/serv1.jpg" alt="" />
+                        <h3>Mantenimiento de equipos</h3>
+                        <p>Realizamos mantenimientos preventivos y correctivos de sus computadoras y equipos de cómputo. En Brandce Technology podrás encontrar un mantenimiento seguro, asequible y estable para tus equipos de última generación, que podrán trabajar a pleno rendimiento y con máxima calidad en todo momento.
+                            </p>
+                        <a href="#container1">Learn More <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/serv1.jpg" alt="" />
+                        <h3>Reparación de equipos</h3>
+                        <p>Contamos con un equipo de profesionales que ponemos a su disposición para la ejecución de
+                            actividades de reparación a demanda. Nuestro soporte técnico es una garantía de calidad que te permitirá mantener tus equipos en un estado óptimo y alejados de cualquier problema en el hardware o software.</p>
+                        <a href="#container2">Learn More <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/serv2.jpg" alt="" />
+                        <h3>Soporte a domicilio</h3>
+                        <p>Confíe en nosotros para la solución de los problemas en los equipos de cómputo de su hogar o negocio. Contamos con un equipo técnico profesional altamente cualificado las 24 horas, que se ocuparán de la reparación de tus equipos de Cómputo ofreciendo soluciones de gran calidad, efectivas y duraderas .
+                        </p>
+                        <a href="#container3">Learn More <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/serv3.jpg" alt="" />
+                        <h3>Venta de equipos</h3>
+                        <p>En Brandce Technology podrás encontrar diversas opciones de productos  informáticos con precios muy variados. Tenemos convenio con las mejores marcas que nos proveen productos de calidad y con lo ultimo en tecnología de punta. Lo mejor es que todos nuestros productos cuentan con una garantía de 18 meses.</p>
+                        <a href="#container4">Learn More <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- la ventana modal de leer mas -->
+        <section class="container-all" id="container1">
+            <div class="popup-cont">
+                <div class="img-cont1"></div>
+                <div class="text-cont">
+                    <h1>Mantenimiento preventivo de equipos</h1>
+                    <p>Todos los equipos deben recibir periódicamente mantenimientos de limpieza tanto del Hardware como
+                        el Software para un correcto funcionamiento y extensión de su vida útil. A medida se usa un
+                        equipo se va acumulando polvo que conlleva a un sobrecalentamiento de los circuitos de una
+                        computadora que al final pueden influir en el daño de las piezas electrónicas internas.</p>
+                    <p>Nuestra empresa realiza mantenimientos preventivos y correctivos de sus computadoras y equipos de
+                        cómputo con personal especializado, presentándole al final de cada trabajo los informes
+                        respectivos.</p>
+                </div>
+                <a href="#servicios" class="btn-close-popup"><b>X</b></a>
+            </div>
+        </section>
+        <section class="container-all" id="container2">
+            <div class="popup-cont">
+                <div class="img-cont2"></div>
+                <div class="text-cont">
+                    <h1>Reparación de equipos de cómputo</h1>
+                    <p>Las fallas en los equipos de cómputo afectan la productividad de los usuarios en distintas
+                        formas, algunos casos que podemos mencionar son la pérdida del trabajo producto de una falla,
+                        pérdida de información en casos de daño de discos duros, y entre muchos más.</p>
+                    <p>En B&L Technology nos especializamos en la reparación de equipos de cómputo pero siempre teniendo
+                        la productividad como enfoque principal, es decir, no solo es reparar por reparar, sino
+                        identificar el origen real de los problemas presentados, muchas veces los orígenes son problemas
+                        eléctricos, problemas de red, antigüedad de equipos entre otros.</p>
+                </div>
+                <a href="#servicios" class="btn-close-popup"><b>X</b></a>
+            </div>
+        </section>
+        <section class="container-all" id="container3">
+            <div class="popup-cont">
+                <div class="img-cont3"></div>
+                <div class="text-cont">
+                    <h1>Soporte técnico a domicilio</h1>
+                    <p>Confíe en nosotros para la solución de los problemas en los equipos de cómputo de su hogar. Toda
+                        computadora, con el uso, presenta inconvenientes por lo que debe llevar su equipo a centros de
+                        reparación o buscar un técnico para que diagnostique y lo repare.</p>
+                    <p>En SoportePC ponemos a disposición nuestros especialistas técnicos que lo ayudarán en actividades
+                        como:</p>
+                    <p>- Mantenimiento de computadoras <br>
+                        - Instalación y configuración Equipos <br>
+                        - Instalación y configuración de redes Wifi</p>
+                </div>
+                <a href="#servicios" class="btn-close-popup"><b>X</b></a>
+            </div>
+        </section>
+        <section class="container-all" id="container4">
+            <div class="popup-cont">
+                <div class="img-cont4"></div>
+                <div class="text-cont">
+                    <h1>Venta de equipos de cómputo</h1>
+                    <p>Como empresa especializada en equipos de cómputo, somos distribuidores de las principales marcas
+                        del mercado en computadoras de escritorio, laptops, servidores, impresoras, equipos de red,
+                        licencias Microsoft, licencias de antivirus, entre otros.</p>
+                    <p>Nosotros lo asesoremos al momento de realizar la compra de sus equipos de cómputo, con la
+                        finalidad de alinear la mejor herramienta al tipo de trabajo que va desempeñar. Si Usted es un
+                        cliente de soporte, tiene descuentos especiales en la compra de equipos de cómputo.</p>
+                </div>
+                <a href="#servicios" class="btn-close-popup"><b>X</b></a>
+            </div>
+        </section>
+        <!-- SECCION PRODUCTOS -->
+        <section class="about-products" id="productos">
+            <h2 class="titulo">NUESTROS PRODUCTOS</h2>
+            <div class="contenedor-products"> <!-- CONTENEDOR GENERAL Q CONTIENE 3 CONTENEDORES MAS Y EL ENLACE Q NOS LLEVA A OTRA PAGINA -->
+                <div class="card-product">
+                    <div class="img-product card1"> <!-- imagen para clickear -->
+                        <a href="productos.html"><img src="img/prod1.jpg" alt=""></a>
+                    </div>
+                    <div class="content-product">
+                        <h3>Computadoras</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde vero hic soluta commodi, culpa
+                            necessitatibus enim aliquam distinctio cum eius.</p>
+                    </div>
+                </div>
+                <div class="card-product">
+                    <div class="img-product card2">
+                        <a href="productos.html"><img src="img/prod2.jpg" alt=""></a>
+                    </div>
+                    <div class="content-product">
+                        <h3>Componentes</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde vero hic soluta commodi, culpa
+                            necessitatibus enim aliquam distinctio cum eius.</p>
+                    </div>
+                </div>
+                <div class="card-product">
+                    <div class="img-product card3">
+                        <a href="productos.html"><img src="img/prod3.jpg" alt=""></a>
+                    </div>
+                    <div class="content-product">
+                        <h3>Accesorios</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde vero hic soluta commodi, culpa
+                            necessitatibus enim aliquam distinctio cum eius.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    SECCION CLIENTES -->
+        <section class="clientes" id="clientes">
+            <div class="contenedor"> <!-- EL PRIMER CONTENEDOR PARTE SUPERIOR PARA TRES CLIENTES -->
+                <h2 class="titulo">NUESTROS CLIENTES</h2>
+                <div class="cards"> <!-- contenedor general superior tiene 3 contenedores +img+parrafo -->
+                    <div class="card">
+                        <img src="img/client1.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Name</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odio.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/client2.png" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Name</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odio.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/client3.png" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Name</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor2"> <!-- SEGUNDO CONTENEDOR PARA LA PARTE INFERIOR DE LOS 3 RESTANTES CLIENTES -->
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/client4.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Name</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odio.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/client5.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Name</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odio.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/client6.png" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Name</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odio.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- SECION CONTACTO (BRANDON)-->
+        <section class="container" id="contacto">
+            <span class="big-circle"></span>
+            <img src="img/shape.png" class="square" alt="" />
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">CONTÁCTANOS</h3>
+                    <p class="text">Brandce Technology cuenta con diferentes medios de contacto. Envianos un correo y solicita tu cotizacón.</p>
+                    <div class="info">
+                        <div class="information">
+                            <img src="img/location.png" class="icon" alt="" />
+                            <p>J.r. Baquijano y Carrillo Nº 136 - Comas</p>
+                        </div>
+                        <div class="information">
+                            <img src="img/email.png" class="icon" alt="" />
+                            <p>brandon.bruce.lopez.hilas.7@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <img src="img/phone.png" class="icon" alt="" />
+                            <p>960 945 459</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <p>Encuentranos en:</p>
+                        <div class="social-icons">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+                    <form id="form" action="">
+                        <h3 class="title">ENVÍA UN CORREO</h3>
+                        <div class="input-container">
+                            <input type="text" name="nombre" id="nombre" class="input" required />
+                            <label for="">Nombres y Apellidos</label>
+                            <span>Nombres y Apellidos</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="mail" id="mail" class="input" required />
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="asunto" id="asunto" class="input" />
+                            <label for="">Asunto</label>
+                            <span>Asunto</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="mensaje" id="mensaje" class="input" required></textarea>
+                            <label for="">Mensaje</label>
+                            <span>Mensaje</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn" />
+                    </form>
+                    <a href="mailto:brandon.bruce.lopez.hilas.7@gmail.com" id="enviar">enviar</a>
+                </div>
+            </div>
+        </section>
+        <script src="js/contact.js"></script>
+        <script>
+            const $form = document.querySelector('#form')
+            const $buttonMailto = document.querySelector('#enviar')
+
+            $form.addEventListener('submit', handleSubmit)
+
+            function handleSubmit(event) {
+                event.preventDefault()
+                const form = new FormData(this)
+                console.log(form.get('nombre'))
+                $buttonMailto.setAttribute('href', `mailto:brandon.bruce.lopez.hilas.7@gmail.com?subject=Asunto: ${form.get('asunto')}&body=Nombres y Apellidos: ${form.get('nombre')} %0ACorreo: ${form.get('mail')} %0AMensaje: ${form.get('mensaje')}`)
+                $buttonMailto.click()
+            }
+        </script>
+    </main>
+    <footer class="main-footer">
+        <div class="footer__section">
+            <h2 class="footer__title">SOBRE NOSOTROS:</h2>
+            <p class="footer__txt">B&L Technology S.A.C es una empresa con 7 años de experiencia que tiene como misión convertirse en su aliado estratégico a través de la asesoría e implementación de Soluciones Integrales de Tecnología de Información para incrementar la productividad de su empresa.</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">UBICACIÓN:</h2>
+            <p class="footer__txt">J.r. Baquijano y Carrillo Nº 136 - Comas</p>
+            <h2 class="footer__title">CONTACTOS: </h2>
+            <p class="footer__txt">Teléfono: +51 960 945 459</p>
+            <p class="footer__txt">Correo: brandon.bruce.lopez.hilas.
+                7@gmail.com</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">ENLACES:</h2>
+            <a href="#inicio" class="footer__link">Inicio</a>
+            <a href="#nosotros" class="footer__link">Nosotros</a>
+            <a href="#portafolio" class="footer__link">Portafolio</a>
+            <a href="#servicios" class="footer__link">Servicios</a>
+            <a href="#productos" class="footer__link">Productos</a>
+            <a href="#clientes" class="footer__link">Clientes</a>
+            <a href="#contacto" class="footer__link">Contacto</a>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">SUSCRIBETE:</h2>
+            <p class="footer__txt">Al suscribirse a nuestra lista de correo, siempre recibirá nuestras últimas noticias y actualizaciones.</p>
+            <input type="email" class="footer__input" placeholder="Enter your email">
+        </div>
+        <p class="copy">&copy; 2022 B&L TECHNOLOGY | Brandon López</p>
+    </footer>
+</body>
+
+</html>
