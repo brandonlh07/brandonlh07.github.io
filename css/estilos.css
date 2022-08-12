@@ -241,7 +241,6 @@ header label {
 
 .sobre-nosotros {
     background: #f2f2f2;
-    padding-bottom: 30px;
 }
 
 .contenedor-sobre-nosotros {
@@ -623,6 +622,52 @@ header label {
     .card-product img {
         width: 100%;
         height: 100%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    /*Navegador*/
+
+    .contenedor-buscador h1 {
+        margin: 16px 0px;
+        font-size: 13px;
+    }
+
+    header label {
+        font-size: 18px;
+        margin: 13px 0;
+    }
+    
+    /*Nosotros*/
+
+    .imagen-about-us {
+        width: 99%;
+    }
+    
+    .sobre-nosotros .contenido-textos {
+        width: 99%;
+        
+    }
+
+    /*Portafolio*/
+
+    .imagen-port {
+        width: 99%;
+    }
+
+    /*Servicios*/
+
+    .servicio-ind {
+        width: 99%;
+    }
+
+    /*Productos*/
+
+    .card-product {
+        width: 90%;
+        margin: 0 0 50px 0;
     }
 
 }
