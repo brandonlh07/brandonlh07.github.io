@@ -31,11 +31,6 @@
   padding: 5px;
   margin: 0px;
 }
-@media (max-width: 360px) {
-  .nav-bottom {
-    width: 320px;
-  }
-}
 
 .whatsapp-button {
   display: flex;
@@ -96,11 +91,7 @@
 .popup-whatsapp > div {
   margin: 5px;
 }
-@media (max-width: 680px) {
-  .popup-whatsapp p {
-    font-size: 0.9em;
-  }
-}
+
 .popup-whatsapp > .content-whatsapp.-top {
   display: flex;
   flex-direction: column;
@@ -186,11 +177,7 @@ input.whats-input[type=text] {
   outline: none;
   transition: .3s;
 }
-@media (max-width: 420px) {
-  input.whats-input[type=text] {
-    width: 225px;
-  }
-}
+
 input.whats-input::placeholder {
   /* Most modern browsers support this now. */
   color: rgba(68, 68, 68, 0.705);
@@ -219,4 +206,37 @@ input.whats-input[type=text]:focus {
 
 .icon-font-color--black {
   color: #333333;
+}
+
+@media screen and (max-width:500px) {
+
+  .popup-whatsapp {
+    width: 270px;
+    height: 150px;
+    padding: 8px;
+  }
+
+  .popup-whatsapp > .content-whatsapp.-top p {
+    margin: 2px 0 2px 0;
+  }
+
+  .popup-whatsapp > .content-whatsapp.-top img {
+    margin: -3px 10px;
+  }
+
+  input.whats-input[type=text] {
+    width: 200px;
+    height: 30px;
+    font-size: 0.85em;
+  }
+
+  .send-msPopup {
+    width: 30px;
+    height: 30px;
+  }
+
+  .send-msPopup .material-icons{
+    font-size: 20px;
+  }
+
 }
