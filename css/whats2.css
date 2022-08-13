@@ -143,7 +143,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #4cc370;
   margin: 0px 0px 0px 5px;
   border: none;
   outline: none;
@@ -153,7 +153,7 @@
   box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
 }
 .send-msPopup:hover {
-  background-color: #f8f8f8;
+  background-color: #4cc370;
   transition: .3s;
 }
 
@@ -167,7 +167,7 @@ input.whats-input[type=text] {
   width: 250px;
   height: 40px;
   box-sizing: border-box;
-  border: 0px solid #ffffff;
+  border: 1px solid #4cc370;
   border-radius: 20px;
   font-size: 1em;
   background-color: #ffffff;
@@ -205,7 +205,7 @@ input.whats-input[type=text]:focus {
 }
 
 .icon-font-color--black {
-  color: #333333;
+  color: #ffffff;
 }
 
 @media screen and (max-width:500px) {
@@ -217,7 +217,7 @@ input.whats-input[type=text]:focus {
   }
 
   .popup-whatsapp > .content-whatsapp.-top p {
-    margin: 2px 0 2px 0;
+    margin: 1px 0 4px 0;
   }
 
   .popup-whatsapp > .content-whatsapp.-top img {
@@ -225,7 +225,7 @@ input.whats-input[type=text]:focus {
   }
 
   input.whats-input[type=text] {
-    width: 200px;
+    width: 208px;
     height: 30px;
     font-size: 0.85em;
   }
@@ -236,7 +236,7 @@ input.whats-input[type=text]:focus {
   }
 
   .send-msPopup .material-icons{
-    font-size: 20px;
+    font-size: 18px;
   }
 
 }
