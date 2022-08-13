@@ -671,3 +671,14 @@ header label {
     }
 
 }
+
+@media screen and (max-width:360px) {
+
+    /*Navegador*/
+
+    .contenedor-buscador h1 {
+        margin: 16px 0px;
+        font-size: 14px;
+    }
+
+}
