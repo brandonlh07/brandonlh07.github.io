@@ -680,5 +680,15 @@ header label {
         margin: 16px 0px;
         font-size: 14px;
     }
+
+    /*Portada*/
+
+    .slider__title {
+        font-size: 25px;
+    }
+
+    .slider__txt {
+        font-size: 15px;
+    }
     
 }
